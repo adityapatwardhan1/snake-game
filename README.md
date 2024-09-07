@@ -7,6 +7,10 @@ On Debian Linux, the corresponding commands are
 sudo apt install python3
 sudo apt install python3-pip
 ```
+One must also install the Pygame library.
+```
+pip install pygame
+```
 Instructions for other Linux Distributions are probably similar.
 
 ## How to Play
