@@ -169,6 +169,7 @@ def get_dimensions_from_user():
             dimensions.append(int(i))
         except:
             print('Invalid dimensions, please enter again')
+            get_dimensions_from_user()
     return dimensions
 
 
