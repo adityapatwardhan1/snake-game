@@ -163,7 +163,12 @@ def get_dimensions_from_user():
     response = str(input())
     response_list = response.split(',')
     for i in response_list:
-        dimensions.append(int(i))
+        try:
+            if int(i) < 0:
+                raise Exception()
+            dimensions.append(int(i))
+        except:
+            print('Invalid dimensions, please enter again')
     return dimensions
 
 
